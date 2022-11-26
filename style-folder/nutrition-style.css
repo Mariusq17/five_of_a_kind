@@ -26,37 +26,14 @@ img {
   color: var(--primary-text-color-2);
 }
 .logo {
-  background-image: url(./logo/three-of-a-kindd.png);
+  background-image: url(./images/three-of-a-kindd.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 170px;
   height: 74px;
 }
-header {
-  padding: 1rem 2rem;
-  margin: 0 auto;
-  max-width: 1700px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 5rem;
-}
-header ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2.5rem;
-}
-header ul li {
-  flex: 1 1 0px;
-}
-header ul a {
-  font-size: 1.425rem;
-  text-decoration: none;
-  color: var(--primary-text-color-2);
-}
+
 .slide {
   min-height: calc(100vh + 110px);
   display: flex;
@@ -86,6 +63,7 @@ header ul a {
   font-size: 1.5rem;
   letter-spacing: 4px;
   color: var(--primary-text-color-1);
+  text-align: center;
 }
 .calories-second-slide {
   padding-top: 5rem;

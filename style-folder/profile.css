@@ -24,9 +24,11 @@ body {
     background-image: radial-gradient(var(--neon-green), var(--dark-blue));
     min-height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    flex-direction: column;
 }
+
 
 .center {
     display: flex;
@@ -102,7 +104,6 @@ form {
     background-position: left;
     border-radius: 50%;
     position: absolute;
-    z-index: 0;
 }
 
 
@@ -177,3 +178,18 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
 
+
+@media (max-width: 800px) {
+    :root {
+        --profile-pic-size: 200px;
+        --container-width: 850px;
+        --container-height: 850px;
+        --padding:50px;
+        --font-size: 16px;
+        --dark-blue: #1C4670;
+        --neon-green: #1DC690;
+        --light-blue: #2E8BC0;
+        --very-light-grey: #EAEAE0;
+        --white: white;
+    }
+}
