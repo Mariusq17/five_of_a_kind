@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@700&display=swap");
+:root {
+  --img-width: 430px;
+  --img-heigt: 420px;
+  --primary-color-1: #ffffff;
+  --primary-color-2: #e3f2e6;
+  --primary-text-color-1: rgba(0, 0, 0, 0.6);
+  --primary-text-color-2: #197672;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  cursor: default;
+}
+img {
+  width: var(--img-width);
+  height: var(--img-heigt);
+  border-radius: 1rem;
+}
+.pop {
+  color: var(--primary-text-color-2);
+}
+.logo {
+  background-image: url(./logo/three-of-a-kindd.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 170px;
+  height: 74px;
+}
+header {
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  max-width: 1700px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+header ul li {
+  flex: 1 1 0px;
+}
+header ul a {
+  font-size: 1.425rem;
+  text-decoration: none;
+  color: var(--primary-text-color-2);
+}
+.slide {
+  min-height: calc(100vh + 110px);
+  display: flex;
+  padding: 2rem 2rem;
+  background-color: var(--primary-color-1);
+}
+.calories-first-slide {
+  min-height: calc(100vh - 110px);
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.calories-first-slide .descp-calories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10rem;
+}
+.calories-first-slide .descp-calories h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 8rem;
+}
+.calories-first-slide .descp-calories span {
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  color: var(--primary-text-color-1);
+}
+.calories-second-slide {
+  padding-top: 5rem;
+  background-color: var(--primary-color-2);
+  flex-direction: column;
+  align-items: center;
+}
+.calories-second-slide h2 {
+  font-size: 3rem;
+  padding: 1rem 0;
+  color: var(--primary-text-color-2);
+}
+.calories-second-slide .descp-understanding {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.calories-second-slide .descp-understanding p {
+  color: var(--primary-text-color-1);
+  font-size: 1.5rem;
+  max-width: 500px;
+}
+.calories-third-slide {
+  background-color: var(--primary-color-1);
+  flex-direction: column;
+  align-items: center;
+}
+.calories-third-slide h2 {
+  font-size: 3rem;
+  padding: 1rem 0;
+  color: var(--primary-text-color-2);
+}
+.calories-third-slide .descp-how-to {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.calories-third-slide .descp-how-to .text-descp-how-to {
+  display: flex;
+  flex-direction: column;
+  color: var(--primary-text-color-1);
+  font-size: 1.5rem;
+}
+.calories-third-slide .descp-how-to .text-descp-how-to p {
+  padding: 1rem 0;
+}
+.calories-third-slide .descp-how-to .text-descp-how-to span {
+  padding: 1rem 0;
+}
+.calories-forth-slide {
+  padding-top: 5rem;
+  flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-color-2);
+}
+.calories-forth-slide h2 {
+  font-size: 3rem;
+  padding: 1rem 0;
+  color: var(--primary-text-color-2);
+}
+.calories-forth-slide .descp-calories-intake {
+  display: flex;
+  padding-top: 5rem;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5rem;
+}
+.calories-forth-slide .descp-calories-intake p {
+  color: var(--primary-text-color-1);
+  font-size: 1.5rem;
+  max-width: 500px;
+}
