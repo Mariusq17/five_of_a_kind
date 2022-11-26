@@ -31,7 +31,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-header {
+.header {
     min-height: 100px;
     width: 100%;
     font-size: var(--font-size);
