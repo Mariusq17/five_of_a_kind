@@ -1,0 +1,225 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --container-size: 850px;
+    --padding:15px 30px;
+    --font-size: 16px;
+    --very-dark-green: #0C2D48;
+    --dark-green: #145DA0;
+    --light-green: #2E8BC0;
+    --very-light-green: #B1D4E0;
+    --white: white;
+}
+/* Folosesc gradientul din css fiindca arata bestial ]] */
+body {
+    background-image: radial-gradient(var(--light-green), var(--dark-green), var(--very-dark-green));
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding);
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    min-width: calc(1.5 * var(--container-size));
+    height: var(--container-size);
+    background-color: transparent;
+    overflow: hidden;
+    border-radius: 25px;
+    display: flex;
+
+}
+
+.login-image {
+    background-image: url(./images/log-in-image.jpg);
+    width: 40%;
+    height: var(--container-size);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-content {
+    background-color: white;
+    width: 60%;
+    height: var(--container-size);
+    gap: 1em;
+    padding: var(--padding);
+}
+
+h1 {
+    font-size: calc(2 * var(--font-size));
+    color: var(--very-dark-green);
+    text-align: center;
+}
+
+h2 {
+    font-size: calc(1.5 * var(--font-size));
+    color: var(--dark-green);
+    text-align: center;
+
+}
+
+form {
+    width: 80%;
+    padding: var(--padding);
+    gap: 1em;
+}
+label {
+    font-size: calc(var(--font-size) * 1.2);
+    color: var(--dark-green);
+    --padding: 0px 7.5px;
+    padding: var(--padding);
+    font-weight: 400;
+}
+
+
+.field {
+    align-items: flex-start;
+    width: 100%;
+    gap: .5em;
+}
+
+.field:last-of-type {
+    margin-top: 1em;
+}
+
+.field > input,
+.field-v2-item > input,
+select,
+.field-v2-item > select {
+    width: 100%;
+    --padding : 7.5px 15px;
+    padding: var(--padding);
+    font-size: var(--font-size);
+    background-color: var(--very-light-green);
+    outline: none;
+    border: none;
+    border-radius: 16px;
+    /* color: var(--very-dark-green); */
+}
+
+.field > input:focus,
+.field-v2-item > input:focus,
+select:focus,
+.field-v2-item > select:focus,
+a:focus
+{
+    outline: 1px solid var(--very-dark-green);
+}
+
+button:focus {
+    outline: 3px solid var(--very-dark-green);
+}
+
+input[type="number"] {
+    -webkit-appearance: textfield;
+       -moz-appearance: textfield;
+            appearance: textfield;
+  }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+}
+
+.field-v2 {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.field-v2-item {
+    align-items: flex-start;
+    flex-grow: 1;
+    flex-basis: 0;
+    width: 150px;
+    gap: .5em;
+}
+
+button {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: var(--padding);
+    border-radius: 900px;
+    font-size: calc(1.3 * var(--font-size));
+    margin-top: 1em;
+    background-color: var(--dark-green);
+    color: var(--white);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+h3 {
+    font-size: var(--font-size);
+    color: #777;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+h3 > a {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--dark-green);
+}
+
+.form-logo {
+    width: 150px;
+    height: 150px;
+    background-image: url(./images/three-of-a-kindd.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* display: ; */
+  }
+
+@media (max-width: 1200px) {
+    :root {
+        --container-size: 650px;
+        --padding:10px 20px;
+        --font-size: 14px;
+        --very-dark-green: #0C2D48;
+        --dark-green: #145DA0;
+        --light-green: #2E8BC0;
+        --very-light-green: #B1D4E0;
+        --white: white;
+    }
+
+    .container {
+        height: calc(1.5 * var(--container-size));
+        min-width: min(80%, var(--container-size));
+    }
+
+    .login-image {
+        display: none;
+    }
+
+    .form-content {
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .form-logo {
+        width: 200px;
+        height: 200px;
+    }
+
+}

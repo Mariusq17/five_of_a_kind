@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login Form Concept</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-image"></div>
+      <div class="form-content center">
+        <div class="center">
+          <h1>Welcome to our page</h1>
+          <h2>Enjoy it and sign up!</h2>
+        </div>
+        <form action="#" class="center">
+          <div class="field center">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Username"
+              required
+            />
+          </div>
+          <div class="field center">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="field center">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div class="field-v2 center">
+            <div class="field-v2-item center">
+              <label for="age">Age</label>
+              <input type="number" min="16" id="age" name="age" required />
+            </div>
+            <div class="field-v2-item center">
+              <label for="gender">Gender</label>
+              <select name="gender" id="gender">
+                <option value="1">Male</option>
+                <option value="0">Female</option>
+              </select>
+            </div>
+          </div>
+          <div class="field-v2 center">
+            <div class="field-v2-item center">
+              <label for="height">Height</label>
+              <input type="number" min="0" id="height" name="height" required />
+            </div>
+            <div class="field-v2-item center">
+              <label for="weight">Weight</label>
+              <input type="number" min="0" id="weight" name="weight" required />
+            </div>
+          </div>
+
+          <div class="field center">
+            <label for="activity-level">Activity-level</label>
+            <select name="activity-level" id="activity-level">
+              <option value="1">Light to no exercise</option>
+              <option value="2">Light Exercise (walks, runs)</option>
+              <option value="3">Moderate Exercise (sports)</option>
+              <option value="4">
+                Heavy Exercise (daily cosistent routine)
+              </option>
+              <option value="5">
+                Extra Heavy Exercise (twice daily cosistent routine)
+              </option>
+            </select>
+          </div>
+          <button type="submit">Sign up</button>
+          <h3>Already a member? <a href="login.html">Sign in</a></h3>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
