@@ -20,6 +20,7 @@ img {
   width: var(--img-width);
   height: var(--img-heigt);
   border-radius: 1rem;
+  box-shadow: 0 10px 49px #333;
 }
 .pop {
   color: var(--primary-text-color-2);
@@ -67,6 +68,9 @@ header ul a {
   justify-content: center;
   align-items: center;
   gap: 5rem;
+}
+.calories-first-slide img {
+  box-shadow: none;
 }
 .calories-first-slide .descp-calories {
   display: flex;
@@ -158,4 +162,295 @@ header ul a {
   color: var(--primary-text-color-1);
   font-size: 1.5rem;
   max-width: 500px;
+}
+.macros-first-slide {
+  background-color: var(--primary-color-1);
+  padding-top: 7rem;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5rem;
+}
+.macros-first-slide .macros-generic-descp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.macros-first-slide .macros-generic-descp h2 {
+  padding-bottom: 4rem;
+  font-family: "Dancing Script", cursive;
+  font-size: 4rem;
+  max-width: 400px;
+}
+.macros-first-slide .macros-generic-descp p {
+  color: var(--primary-text-color-1);
+  font-size: 1.5rem;
+  max-width: 470px;
+}
+.macros-second-slide {
+  background-color: var(--primary-color-2);
+  padding-top: 7rem;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.macros-second-slide .protein-generic-descp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.macros-second-slide .protein-generic-descp h2 {
+  color: var(--primary-text-color-2);
+  padding-bottom: 4rem;
+  font-size: 4rem;
+}
+.macros-second-slide .protein-generic-descp p {
+  color: var(--primary-text-color-1);
+  font-size: 1.5rem;
+}
+.macros-second-slide .protein-generic-descp span {
+  padding-top: 1.5rem;
+  color: var(--primary-text-color-1);
+  font-size: 1.5rem;
+}
+.macros-third-slide {
+  background-color: var(--primary-color-1);
+  padding-top: 7rem;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5rem;
+}
+.macros-third-slide .carb-generic-descp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+.macros-third-slide .carb-generic-descp h2 {
+  color: var(--primary-text-color-2);
+  padding-bottom: 1rem;
+  font-size: 3rem;
+}
+.macros-third-slide .carb-generic-descp p {
+  color: var(--primary-text-color-1);
+  font-size: 1.5rem;
+  max-width: 470px;
+}
+.macros-forth-slide {
+  background-color: var(--primary-color-2);
+  padding-top: 7rem;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5rem;
+}
+.macros-forth-slide .fat-generic-descp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.macros-forth-slide .fat-generic-descp h2 {
+  color: var(--primary-text-color-2);
+  padding-bottom: 1rem;
+  font-size: 4rem;
+}
+.macros-forth-slide .fat-generic-descp p {
+  color: var(--primary-text-color-1);
+  font-size: 1.5rem;
+  max-width: 480px;
+}
+.macros-forth-slide .fat-generic-descp span {
+  padding-top: 1.5rem;
+  color: var(--primary-text-color-1);
+  font-size: 1.5rem;
+  max-width: 470px;
+}
+.macros-forth-slide .fat-generic-descp span .pop {
+  color: var(--primary-text-color-2);
+}
+.micros-first-slide {
+  background-color: var(--primary-color-1);
+  padding-top: 7rem;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5rem;
+}
+.micros-first-slide img {
+  box-shadow: none;
+}
+.micros-first-slide .micros-generic-descp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.micros-first-slide .micros-generic-descp h2 {
+  padding-bottom: 4rem;
+  font-family: "Dancing Script", cursive;
+  font-size: 4rem;
+}
+.micros-first-slide .micros-generic-descp p {
+  color: var(--primary-text-color-1);
+  font-size: 1.5rem;
+  max-width: 470px;
+}
+@media (max-width: 910px) {
+  .slide {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .calories-first-slide img {
+    order: 2;
+    margin-bottom: 3rem;
+  }
+  .calories-first-slide .descp-calories {
+    padding-bottom: 2rem;
+    order: 1;
+  }
+  .calories-second-slide {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .descp-understanding {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .descp-understanding div {
+    order: 1;
+  }
+  .descp-understanding img {
+    order: 2;
+  }
+  .calories-second-slide h2 {
+    text-align: center;
+  }
+  .descp-how-to div {
+    order: 1;
+  }
+  .descp-how-to img {
+    order: 2;
+    margin-bottom: 3rem;
+  }
+  .descp-how-to {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+  }
+  .calories-third-slide h2 {
+    text-align: center;
+  }
+  .calories-forth-slide h2 {
+    text-align: center;
+  }
+  .calories-forth-slide .descp-calories-intake {
+    flex-direction: column;
+    padding-top: 5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding-top: 1rem;
+  }
+  .calories-forth-slide .descp-calories-intake p {
+    order: 1;
+  }
+  .calories-forth-slide .descp-calories-intake img {
+    order: 2;
+    margin-bottom: 3rem;
+  }
+  .macros-first-slide img {
+    order: 2;
+  }
+  .macros-first-slide .macros-generic-descp {
+    order: 1;
+  }
+  .macros-first-slide .macros-generic-descp h2 {
+    text-align: center;
+  }
+  .macros-second-slide .protein-generic-descp {
+    order: 1;
+  }
+  .macros-second-slide img {
+    order: 2;
+    margin-bottom: 2rem;
+  }
+  .macros-third-slide {
+    padding-top: 4rem;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+  .macros-third-slide .carb-generic-descp {
+    justify-content: center;
+    align-items: center;
+  }
+  .macros-forth-slide {
+    padding-top: 4rem;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+  .macros-forth-slide img {
+    order: 2;
+  }
+  .macros-forth-slide .fat-generic-descp {
+    order: 1;
+  }
+  .micros-first-slide {
+    padding-top: 4rem;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+  .micros-first-slide img {
+    order: 2;
+  }
+}
+@media (max-width: 499px) {
+  :root {
+    --img-width: 230px;
+    --img-heigt: 220px;
+  }
+  .calories-first-slide .descp-calories h2 {
+    font-size: 5rem;
+  }
+  .calories-first-slide .descp-calories span {
+    font-size: 1rem;
+  }
+  .descp-understanding div {
+    font-size: 1rem;
+  }
+  .calories-second-slide h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .calories-third-slide h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .descp-how-to div {
+    font-size: 0.7rem;
+  }
+  .calories-forth-slide h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .macros-first-slide .macros-generic-descp h2 {
+    text-align: center;
+    font-size: 2.7rem;
+  }
+  .macros-second-slide .protein-generic-descp h2 {
+    font-size: 2.7rem;
+  }
+  .macros-third-slide .carb-generic-descp h2 {
+    font-size: 2rem;
+  }
+  .micros-first-slide .micros-generic-descp h2 {
+    font-size: 2.7rem;
+  }
 }
