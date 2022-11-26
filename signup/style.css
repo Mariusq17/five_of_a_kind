@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700;900&display=swap');
 
 * {
@@ -24,6 +26,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: var(--padding);
 }
 
 .center {
@@ -36,7 +39,7 @@ body {
 .container {
     min-width: calc(1.5 * var(--container-size));
     height: var(--container-size);
-    background-color: green;
+    background-color: transparent;
     overflow: hidden;
     border-radius: 25px;
     display: flex;
@@ -63,11 +66,14 @@ body {
 h1 {
     font-size: calc(2 * var(--font-size));
     color: var(--very-dark-green);
+    text-align: center;
 }
 
 h2 {
     font-size: calc(1.5 * var(--font-size));
     color: var(--dark-green);
+    text-align: center;
+
 }
 
 form {
@@ -165,10 +171,55 @@ h3 {
     font-size: var(--font-size);
     color: #777;
     font-weight: 400;
+    text-align: center;
+
 }
 
 h3 > a {
     text-decoration: none;
     font-weight: 700;
     color: var(--dark-green);
+}
+
+.form-logo {
+    width: 150px;
+    height: 150px;
+    background-image: url(./images/three-of-a-kindd.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* display: ; */
+  }
+
+@media (max-width: 1200px) {
+    :root {
+        --container-size: 650px;
+        --padding:10px 20px;
+        --font-size: 14px;
+        --very-dark-green: #0C2D48;
+        --dark-green: #145DA0;
+        --light-green: #2E8BC0;
+        --very-light-green: #B1D4E0;
+        --white: white;
+    }
+
+    .container {
+        height: calc(1.5 * var(--container-size));
+        min-width: min(80%, var(--container-size));
+    }
+
+    .login-image {
+        display: none;
+    }
+
+    .form-content {
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .form-logo {
+        width: 200px;
+        height: 200px;
+    }
+
 }
