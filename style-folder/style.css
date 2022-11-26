@@ -47,7 +47,7 @@ body {
 }
 
 .login-image {
-    background-image: url(./images/log-in-image.jpg);
+    background-image: url(../images/log-in-image.jpg);
     width: 40%;
     height: var(--container-size);
     background-position: center;
@@ -184,7 +184,7 @@ h3 > a {
 .form-logo {
     width: 150px;
     height: 150px;
-    background-image: url(./images/three-of-a-kindd.png);
+    background-image: url(../images/three-of-a-kindd.png);
     background-size: cover;
     background-repeat: no-repeat;
     /* display: ; */

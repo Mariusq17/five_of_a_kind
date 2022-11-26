@@ -26,7 +26,7 @@ img {
   color: var(--primary-text-color-2);
 }
 .logo {
-  background-image: url(./images/three-of-a-kindd.png);
+  background-image: url(../images/three-of-a-kindd.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

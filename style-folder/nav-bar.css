@@ -6,7 +6,7 @@
 }
 
 .logo {
-    background-image: url(./images/three-of-a-kindd.png);
+    background-image: url(../images/three-of-a-kindd.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -61,7 +61,7 @@
   .burgur-menu {
     width: 50px;
     height: 50px;
-    background-image: url(./images/menu.png);
+    background-image: url(../images/menu.png);
     position: absolute;
     right: 2rem;
     top: 2.25rem;
