@@ -1,0 +1,126 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+    background-image: url(../images/three-of-a-kindd.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    --size: 100px;
+    width: var(--size);
+    height: var(--size);
+  }
+  header {
+    z-index: 100;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    --padding: 15px 30px;
+    padding: var(--padding);
+    display: flex;
+    height: max-content;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 5rem; */
+    position: sticky;
+    background-color: rgba(255,255,255, .6);
+    backdrop-filter: blur(10px);
+    top: 0;
+  }
+  header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  header ul li {
+    flex: 1 1 0px;
+  }
+  header ul a {
+    display: block;
+    --blue: #050533;
+    font-size: 1.425rem;
+    text-decoration: none;
+    color: var(--blue);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    padding: 15px 30px;
+  }
+
+  header ul a:hover {
+    background-color: #333;
+    color: #ddd;
+  }
+
+
+  .burgur-menu {
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/menu.png);
+    position: absolute;
+    right: 2rem;
+    top: 2.25rem;
+    display: none;
+    cursor: pointer;
+    background-size: cover;
+    border-radius: 5px;
+  }
+
+
+  @media (max-width: 400px) {
+    header {
+      padding: 1rem 0;
+      gap: 0rem;
+
+    }
+
+  }
+
+  @media (max-width: 800px) {
+    .burgur-menu {
+      display: block;
+    }
+
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0rem;
+      /* min-height: 100%; */
+    }
+
+header nav {
+  width: 100%;
+}
+
+    header ul {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding-left: 0;
+
+    }
+    header li {
+      border-bottom: 1px solid black;
+      width: 50%;
+      text-align: center;
+    }
+
+    header a {
+      width: 100%;
+    }
+
+    nav {
+      display: none;
+    }
+
+    nav.active {
+      display: flex;
+      
+    }
+    
+  }

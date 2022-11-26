@@ -1,0 +1,23 @@
+:root {
+    --padding: 15px 30px;
+    --container-height: 500px;
+    --container-width: 900px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: #333;
+    flex-direction: column;
+    gap: 7.5em;
+}
+
+.container {
+    width: 90%;
+    height: calc(100vh - 150px);
+    background-color: green;
+}

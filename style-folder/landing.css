@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --padding: 15px 30px;
+    --font-size: 16px;
+    --red: #E34234;
+    --blue: #0D698B;
+    --dark-blue: #050533;
+    --grey: #F2F1E8;
+    --white: white;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body {
+    background-image: url(../images/bg-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content {
+    height: calc(100% - 100px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4em;
+    width: 80%;
+}
+
+
+.text-wrapper {
+    width: 65%;
+    flex-direction: column;
+    gap: 2em;
+    align-items: flex-start;
+}
+
+.text-wrapper > h1 {
+    color: var(--dark-blue);
+    font-size: calc(3 * var(--font-size));
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+}
+
+.text-wrapper > h1 > strong {
+    -webkit-text-fill-color: var(--dark-blue);
+    -webkit-text-stroke-width: 0px;
+}
+
+.text-wrapper > h2 {
+    color: var(--blue);
+    font-size: calc(1.5 * var(--font-size));
+    width: 100%;
+}
+
+.get-started {
+    padding: var(--padding);
+    background-color: var(--blue);
+    border-radius: 900px;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 700;
+    font-size: calc(1.1 * var(--font-size));
+    transition: 400ms ease-in-out;
+}
+
+.get-started:hover {
+    background-color: var(--dark-blue);
+}
+
+.get-started:focus {
+    outline: 2px solid black;
+}
+
+@media (max-width: 1200px) {
+    :root {
+        --padding: 15px 30px;
+        --font-size: 14px;
+        --red: #E34234;
+        --blue: #0D698B;
+        --dark-blue: #050533;
+        --grey: #F2F1E8;
+        --white: white;
+    }
+
+    .body {
+        background-position: left;
+     }
+
+     .content {
+        align-items: center;
+     }
+
+     .content h1, 
+     .content h2 {
+        text-align: center;
+        width: 100%;
+     }
+}
+
+@media (max-width: 600px) {
+    :root {
+        --padding: 15px 30px;
+        --font-size: 12px;
+        --red: #E34234;
+        --blue: #0D698B;
+        --dark-blue: #050533;
+        --grey: #F2F1E8;
+        --white: white;
+    }
+    .body {
+        background-position: left;
+     }
+
+     .content {
+        align-items: center;
+     }
+
+     .content h1, 
+     .content h2 {
+        text-align: center;
+        width: 100%;
+
+     }
+}

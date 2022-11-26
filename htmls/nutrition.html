@@ -7,22 +7,24 @@
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
     />
-    <link rel="stylesheet" href="nutrition-style.css" />
+    <link rel="stylesheet" href="../style-folder/nav-bar.css" />
+    <link rel="stylesheet" href="../style-folder/nutrition-style.css" />
   </head>
   <body>
     <header>
-      <a href="" class="logo"></a>
-      <nav>
+      <a href="landing.html" class="logo"></a>
+      <div id="burgur-menu" class="burgur-menu"></div>
+      <nav id="links">
         <ul>
-          <li><a href="">Hub</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Profile</a></li>
+          <li><a href="hub.html">Hub</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="profile.html">Profile</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="slide calories-first-slide">
-        <img src="./images-nutritie/calories/platou-main.png" alt="" />
+        <img src="../images/platou-main.png" alt="" />
         <div class="descp-calories">
           <h2>Calories</h2>
           <span class="qout">"You always fear what you don't understand"</span>
@@ -36,13 +38,13 @@
             we should understand that they are just an unit of mesaurement for
             <span class="pop">energy</span>.
           </p>
-          <img src="./images-nutritie/calories/fructe-banana.png" alt="" />
+          <img src="../images/fructe-banana.png" alt="" />
         </div>
       </section>
       <section class="slide calories-third-slide">
         <h2>How do we use calories?</h2>
         <div class="descp-how-to">
-          <img src="./images-nutritie/calories/burugr.jpg" alt="" />
+          <img src="../images/burugr.jpg" alt="" />
           <div class="text-descp-how-to">
             <p>
               Our bodies use the calories we get from food to fuel our basal
@@ -69,11 +71,11 @@
             This is an estimate of your daily caloric intake based on the
             information from your profile :
           </p>
-          <img src="./images-nutritie/calories/oat-meal.jpg" alt="" />
+          <img src="../images/oat-meal.jpg" alt="" />
         </div>
       </section>
       <section class="slide macros-first-slide">
-        <img src="./images-nutritie/macro/macro-first-img.jpg" alt="" />
+        <img src="../images/macro-first-img.jpg" alt="" />
         <div class="macros-generic-descp">
           <h2>MacroNutrients</h2>
           <p>
@@ -84,7 +86,7 @@
         </div>
       </section>
       <section class="slide macros-second-slide">
-        <img src="./images-nutritie/macro/protein.gif" alt="" />
+        <img src="../images/protein.gif" alt="" />
         <div class="protein-generic-descp">
           <h2>Protein</h2>
           <p>
@@ -109,10 +111,10 @@
             grains, vegetables and fruits
           </p>
         </div>
-        <img src="./images-nutritie/macro/carb.gif" alt="" />
+        <img src="../images/carb.gif" alt="" />
       </section>
       <section class="slide macros-forth-slide">
-        <img src="./images-nutritie/macro/fat.gif" alt="" />
+        <img src="../images/fat.gif" alt="" />
         <div class="fat-generic-descp">
           <h2>Fats</h2>
           <p>
@@ -128,7 +130,7 @@
         </div>
       </section>
       <section class="slide micros-first-slide">
-        <img src="./images-nutritie/macro/micro.gif" alt="" />
+        <img src="../images/micro.gif" alt="" />
         <div class="micros-generic-descp">
           <h2>MicroNutrients</h2>
           <p>
@@ -141,5 +143,6 @@
         </div>
       </section>
     </main>
+    <script src="../nav-bar.js"></script>
   </body>
 </html>

@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style-folder/style.css" />
+    <link rel="stylesheet" href="../style-folder/nav-bar.css" />
     <title>Login Form Concept</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,16 +15,27 @@
     />
   </head>
   <body>
+    <header>
+      <a href="landing.html" class="logo"></a>
+      <div id="burgur-menu" class="burgur-menu"></div>
+      <nav id="links">
+        <ul>
+          <li><a href="hub.html">Hub</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="profile.html">Profile</a></li>
+        </ul>
+      </nav>
+    </header>
     <div class="container">
       <div
         class="login-image"
-        style="background-image: url(./images/login-bg-image.jpg)"
+        style="background-image: url(../images/login-bg-image.jpg)"
       ></div>
       <div class="form-content center">
         <div class="form-logo"></div>
         <div class="center">
-          <h1>Welcome to our page</h1>
-          <h2>Enjoy it and sign up!</h2>
+          <h1>Welcome back to our webpage!</h1>
+          <h2>Enjoy it and sign in!</h2>
         </div>
         <form action="#" class="center">
           <div class="field center">
@@ -62,5 +74,6 @@
         </form>
       </div>
     </div>
+    <script src="../nav-bar.js"></script>
   </body>
 </html>
