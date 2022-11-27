@@ -49,7 +49,7 @@ main {
   justify-content: center;
 }
 .logo {
-  background-image: url(./logo/three-of-a-kindd.png);
+  background-image: url(../images/three-of-a-kindd.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

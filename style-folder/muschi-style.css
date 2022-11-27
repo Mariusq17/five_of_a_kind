@@ -21,13 +21,7 @@ p{
     font-size: 2rem;
     max-width: 400px;
 }
-a{
-    color:#050A30 !important;
-}
-header ul a:hover {
-    background-color: #000C66 !important;
-    color: #7EC8E3 !important;
-}
+
 img{
     margin: 0 8rem;
 }
