@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@700&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    width: 100%;
+    background: rgb(231,231,238);
+    background: radial-gradient(circle, rgba(231,231,238,1) 25%, rgba(193,193,193,1) 75%);
+}
+img{
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+}
+.descp{
+    padding-top: 1.5rem;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:20rem;
+}
+.text{
+    gap:0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    font-size: 5rem;
+    color:#df6e5c;
+    letter-spacing: 3px;
+}
+.text p{
+    max-width: 500px;
+    text-align: center;
+    color:#3d7284;
+    font-size: 2rem;
+    line-height: 1.5em;
+}
+.journal{
+    padding: 2rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.journal form{
+    width: 70%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+.journal form textarea{
+    padding: 2rem;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    width: 100%;
+    color: #204855;
+    font-size: 1rem;
+    font-family: inherit;
+}
+.journal form input{
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem 3rem;
+    font-family: inherit;
+    background-color: #df6e5c;
+    color: #204855;
+    font-size: 1rem;
+    transition: all 0.5s ease-in;
+}.journal form input:hover{
+    background-color:#3d7284;
+    color: #ffffff;
+
+}
+@media(max-width:1500px)
+{
+    .descp{
+        gap:10rem;
+    }
+}
+@media(max-width:1250px)
+{
+    .descp{
+        gap:5rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+}
+@media(max-width:1250px)
+{
+.descp{
+    flex-direction: column;
+}
+}
+@media(max-width:550px)
+{
+img{
+    width: 250px;
+    height: 250px;
+}
+}

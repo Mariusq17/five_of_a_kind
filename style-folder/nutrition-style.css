@@ -145,7 +145,7 @@ img {
   background-color: var(--primary-color-1);
   padding-top: 7rem;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 5rem;
 }
 .macros-first-slide .macros-generic-descp {
@@ -196,7 +196,7 @@ img {
   background-color: var(--primary-color-1);
   padding-top: 7rem;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 5rem;
 }
 .macros-third-slide .carb-generic-descp {
@@ -220,7 +220,7 @@ img {
   background-color: var(--primary-color-2);
   padding-top: 7rem;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 5rem;
 }
 .macros-forth-slide .fat-generic-descp {
@@ -252,7 +252,7 @@ img {
   background-color: var(--primary-color-1);
   padding-top: 7rem;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 5rem;
 }
 .micros-first-slide img {
@@ -430,5 +430,23 @@ img {
   }
   .micros-first-slide .micros-generic-descp h2 {
     font-size: 2.7rem;
+  }
+}
+@media(min-width:1500px)
+{
+  .calories-third-slide .descp-how-to .text-descp-how-to p {
+    max-width: 600px;
+  }
+  .macros-first-slide .macros-generic-descp h2 {
+    font-size: 6rem;
+  }
+  .macros-second-slide .protein-generic-descp p {
+    max-width: 600px;
+  }
+  .macros-second-slide .protein-generic-descp span {
+    max-width: 600px;
+  }
+  .descp-how-to{
+    padding-top: 140px ;
   }
 }

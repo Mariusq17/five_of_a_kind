@@ -10,8 +10,8 @@
 }
 
 :root {
-    --container-size: 850px;
-    --padding:15px 30px;
+    --container-size: 820px;
+    --padding: 10px 30px;
     --font-size: 16px;
     --very-dark-green: #0C2D48;
     --dark-green: #145DA0;
@@ -24,7 +24,7 @@ body {
     background-image: radial-gradient(var(--light-green), var(--dark-green), var(--very-dark-green));
     min-height: 100vh;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
@@ -192,7 +192,7 @@ h3 > a {
 
 @media (max-width: 1200px) {
     :root {
-        --container-size: 650px;
+        --container-size: 630px;
         --padding:10px 20px;
         --font-size: 14px;
         --very-dark-green: #0C2D48;
@@ -226,7 +226,7 @@ h3 > a {
 
 @media (max-width: 800px) {
     :root {
-        --container-size: 550px;
+        --container-size: 500px;
         --padding:5px 10px;
         --font-size: 12px;
         --very-dark-green: #0C2D48;
@@ -258,7 +258,7 @@ h3 > a {
 
 @media (max-width: 400px) {
     :root {
-        --container-size: 350px;
+        --container-size: 300px;
         --padding:5px 10px;
         --font-size: 12px;
         --very-dark-green: #0C2D48;
