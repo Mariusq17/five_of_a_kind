@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@700&display=swap");
+:root {
+  --img-width: 370px;
+  --img-heigt: 320px;
+  --primary-color-1: #ffffff;
+  --primary-color-2: #e3f2e6;
+  --primary-text-color-1: rgba(0, 0, 0, 0.6);
+  --primary-text-color-2: #197672;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.ma-omor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.second-movement {
+  margin-bottom: 2rem;
+}
+h2 {
+  padding: 2rem 0;
+}
+.page {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.body-part-img {
+  object-fit: cover;
+  width: var(--img-width);
+  height: var(--img-heigt);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  background-image: url(./logo/three-of-a-kindd.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 170px;
+  height: 74px;
+}
+header {
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  max-width: 1700px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+header ul li {
+  flex: 1 1 0px;
+}
+header ul a {
+  font-size: 1.425rem;
+  text-decoration: none;
+  color: var(--primary-text-color-2);
+}
+.first-page {
+  min-height: calc(100vh - 110px);
+}
+.overall-descp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color-1);
+}
+.section {
+  padding: 0 3rem;
+}
+.descp {
+  max-width: 700px;
+  color: var(--primary-text-color-1);
+  font-size: 1.3rem;
+  line-height: 1.5em;
+}
+h1 {
+  font-size: 4.9rem;
+  color: var(--primary-text-color-2);
+}
+h2 {
+  color: var(--primary-text-color-2);
+  font-size: 3.9rem;
+}
+.overall-descp {
+  width: 100vw;
+}
+.flex-wrap {
+  display: flex;
+  align-items: center;
+}
+.movement-img {
+  object-fit: cover;
+  width: var(--img-width);
+  height: var(--img-heigt);
+}
+@media (min-width: 1500px) {
+  .overall-descp {
+    padding-top: 3rem;
+    gap: 14rem;
+  }
+  .flex-wrap {
+    gap: 10rem;
+  }
+}
+@media (max-width: 800px) {
+  .overall-descp {
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+    border-bottom: 1px solid var(--primary-text-color-2);
+  }
+  .flex-wrap {
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+  }
+  .first-movement,
+  .second-movement {
+    border-bottom: 1px solid var(--primary-text-color-2);
+  }
+  h2 {
+    padding: 2rem 0;
+    text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  :root {
+    --img-width: 230px;
+    --img-heigt: 200px;
+  }
+  .body-part-title {
+    font-size: 3rem;
+  }
+  .movement-title {
+    font-size: 2.7rem;
+  }
+}
