@@ -119,21 +119,25 @@ img {
 }
 .calories-forth-slide {
   padding-top: 5rem;
-  flex-direction: column;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-color: var(--primary-color-2);
+  gap:3.5rem;
 }
 .calories-forth-slide h2 {
   font-size: 3rem;
   padding: 1rem 0;
   color: var(--primary-text-color-2);
 }
+.text-wrapper{
+  display: flex;
+  flex-direction: column;
+}
 .calories-forth-slide .descp-calories-intake {
   display: flex;
-  padding-top: 5rem;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 5rem;
 }
 .calories-forth-slide .descp-calories-intake p {
