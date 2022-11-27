@@ -9,7 +9,7 @@
 :root {
     --profile-pic-size: 200px;
     --container-width: 850px;
-    --container-height: 850px;
+    --container-height: 950px;
     --padding:50px;
     --font-size: 16px;
     --dark-blue: #1C4670;
@@ -36,8 +36,13 @@ body {
     align-items: center;
 }
 
-.container {
-    min-height: var(--container-height);
+main {
+    gap: 3rem;
+    padding: var(--padding) var(--padding);
+}
+
+.profile-container {
+    height: var(--container-height);
     width: var(--container-width);
     background-color: var(--white);
     border-top-left-radius: 50px;
@@ -159,6 +164,20 @@ h2 {
     color: var(--light-blue);
 }
 
+.user-dates > a {
+    font-size: calc(.9 * var(--font-size));
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    align-self: flex-start;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    --padding: 10px 20px;
+    padding: var(--padding);
+    background-color: var(--dark-blue);
+    border-radius: 16px;;
+}
+
 .field > input {
     padding: var(--padding);
     border-top-left-radius: 16px;
@@ -178,6 +197,35 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
 
+
+.diary-container {
+    flex-direction: column;
+    height: var(--container-height);
+    width: var(--container-width);
+    background-color: red;
+    padding: var(--padding);
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.diary-post-wrapper {
+    width: 100%;
+    /* background-color: white; */
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: var(--padding);
+    gap: 2rem;
+    overflow-y: scroll;
+
+}
+
+.diary-post {
+    height: var(--profile-pic-size);
+    width: 100%;
+    background-color: white;
+    flex: none;
+}
 
 @media (max-width: 800px) {
     :root {
